@@ -1,0 +1,10 @@
+El objetivo de esta Wiki, es definir el plan de acción, cuando se desee eliminar un capítulo del software de presupuestos.
+
+1. Ingresar al servidor 192.168.10.31 y dirigirse a la base de datos: DBPAYC_PRODUCCION
+2. Una vez en la base de datos ir a la tabla "Presupuesto"
+3. Realizar la consulta del "Presupuesto", el  "CodigoNodo" y los demás campos que sean necesarios 
+para encontrar el valor que está generando conflicto
+4. Una vez echa la consulta y estando seguros de que es el valor a eliminar, crear la consulta de eliminación con 
+las restricciones las cuales se utilizaron para la consulta de búsqueda
+5. Como recomendación, cada vez que se haga este proceso, se debería realizar un back up de la base de datos con el fin 
+de evitar pérdida de información.
